@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Phonie App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="sign-in_sign-up">
+          <form class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <!-- username -->
+            <div class="input_field">
+              <i class="fas fa-user"> </i>
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+
+            <!-- password -->
+            <div class="input_field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required />
+            </div>
+
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">...or sign in with our social platforms</p>
+
+            <!-- socials -->
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+
+          <!-- break -->
+          <form class="sign-up-form">
+            <h2 class="title">Register here</h2>
+            <!-- username -->
+            <div class="input_field">
+              <i class="fas fa-user"> </i>
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="input_field">
+              <i class="fas fa-envelope"> </i>
+              <input type="text" placeholder="Email" />
+            </div>
+
+            <!-- password -->
+            <div class="input_field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <input type="submit" value="Sign up" class="btn solid" />
+            <p class="social-text">...or sign up with our social platforms</p>
+
+            <!-- socials -->
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <!-- left panel -->
+        <div class="panel left-panel">
+          <div class="content">
+            <h3 style="text-transform: uppercase; letter-spacing: 0.3rem">
+              Welcome Back!
+            </h3>
+            <p>
+              We can't wait to show you all the good we've been building while
+              you were away. Sign in and we will tell you right away.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="./img/connection_re_lcud.svg" class="image" />
+        </div>
+
+        <!-- right panel -->
+        <div class="panel right-panel">
+          <div class="content">
+            <h3 style="text-transform: uppercase; letter-spacing: 1rem">
+              Phonie
+            </h3>
+            <p>
+              "Life is what happens when your new telephone is charging..." Join
+              us here as we build the telecommunication of the future.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+          </div>
+          <img src="./img/undraw_phone_call_re_hx6a.svg" class="image" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
